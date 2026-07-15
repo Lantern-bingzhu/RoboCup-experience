@@ -88,9 +88,9 @@
 
 - 查看README文本文件内容  
     ```cat README.txt```
-- 添加README文本文件至仓库
+- 添加README文本文件至仓库  
     ```git add README.txt```
-- 提交README文本文件至仓库
+- 提交README文本文件至仓库  
     ```git commit -m "注释"```
 
 ---
@@ -119,11 +119,13 @@
     ```git log --pretty=oneline```
 - 在工作区直接删除README文本文件  
     ```rm README.py```
-- 撤销修改 README文本文件
+- 撤销修改 README文本文件  
     ```git checkout -- README.txt ```
 - 撤销工作区删除：同上一条
 - 完全删除README文本文件  
     ```git rm README.py```
+- 暂存所有修改过的文件
+    ```git add .```
 - 查看工作区和版本库里README文本文件最新版本的区别  
     ```git diff HEAD -- README.txt```
 
@@ -139,10 +141,10 @@
     ```git remote add origin git@github.com:用户名/远程仓库名.git```
 
 - 将本地仓库推到远程仓库（空）  
-    ```git push -u origin master```
+    ```git push -u origin 分支名（通常是master）```
 
 - 将本地仓库推到远程仓库（不空）  
-    ```git push origin master```
+    ```git push origin 分支名（通常是master）```
 
 - 将远程仓库拉到本地（点击code复制）
     ```git clone 链接.git```
@@ -182,7 +184,7 @@
 
 </details>
 
-# 22号端口连接错误
+# 切换端口
 <details>
 <summary></summary>
 
@@ -203,14 +205,14 @@
 
 2. 打开ssh配置文件
         ```nano ~/.ssh/config```
-3. 添加配置
+3. 添加配置  
         ```Host github.com```  
         ```Hostname ssh.github.com```  
         ```Port 443```
-4. 测试连接
+4. 测试连接  
         ```ssh -T git@github.com```
 
-    显示Hi 用户名! You've successfully authenticated, but GitHub does not provide shell access.即为成功。
+        显示：Hi 用户名! You've successfully authenticated, but GitHub does not provide shell access.即为成功。
 
 </details>
 
