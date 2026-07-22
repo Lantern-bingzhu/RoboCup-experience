@@ -147,7 +147,7 @@
     ```git push origin 分支名（通常是master）```
 
 - 将远程仓库拉到本地（点击code复制）
-    ```git clone 链接.git```
+    ```git clone 链接```
 
 </details>
 
