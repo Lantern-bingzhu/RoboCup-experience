@@ -107,6 +107,8 @@
 <details>
 <summary></summary>
 
+- 启动代理
+    ```eval "$(ssh-agent -s)"```
 - 查看文件列表  
     ```ls```
 - 查看仓库状态  
